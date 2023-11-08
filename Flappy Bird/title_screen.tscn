@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://byiuh82own41p"]
+
+[ext_resource type="Script" path="res://title_screen.gd" id="1_2chwo"]
+[ext_resource type="Texture2D" uid="uid://cty2fr1fuk7qm" path="res://flappybird-title.webp" id="1_ktbh7"]
+
+[node name="title" type="Node2D"]
+script = ExtResource("1_2chwo")
+
+[node name="Flappybird-title" type="Sprite2D" parent="."]
+position = Vector2(107, 191.5)
+scale = Vector2(0.164062, 0.300781)
+texture = ExtResource("1_ktbh7")
+
+[node name="Timer" type="Timer" parent="Flappybird-title"]
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 319.0
+offset_right = 179.0
+offset_bottom = 350.0
+text = "Quit"
+
+[node name="Start" type="Button" parent="."]
+offset_left = 42.0
+offset_top = 315.0
+offset_right = 88.0
+offset_bottom = 348.0
+text = "Start"
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
