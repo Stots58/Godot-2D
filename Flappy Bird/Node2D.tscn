@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://flappy2/Flappy Bird Assets 1.5/Flappy Bird Assets/demo-img-1.png" type="Texture2D" id=1]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="Demo-img-1" type="Sprite2D" parent="."]
-position = Vector2( 226, 131 )
-texture = ExtResource( 1 )
